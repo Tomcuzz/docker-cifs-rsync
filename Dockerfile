@@ -2,6 +2,7 @@ FROM debian:stable
 VOLUME /local
 
 ADD run.sh /run.sh
+RUN chmod +x /run.sh
 
 ENV SHARE-SERVER="192.168.1.1"
 ENV SHARE-NAME="share"
